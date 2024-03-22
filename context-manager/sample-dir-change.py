@@ -1,5 +1,6 @@
 import os 
 
+# cwd: current working directory 
 
 def to_dummy_dir_1(): 
         main_cwd = os.getcwd()
@@ -7,6 +8,7 @@ def to_dummy_dir_1():
         print('parent dir: ', main_cwd)
         
         os.chdir('dummy-dir-1')
+        print(os.listdir())
         cwd = os.getcwd()
         print('after changing cwd: ', cwd)
         
